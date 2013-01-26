@@ -1,4 +1,12 @@
+/* 
+// Read-in-bed.js 
+// https://github.com/danalexander/read-in-bed
+*/
+
+
 function wrapBody(id) {
+	// REFERENCE: http://stackoverflow.com/questions/1577814/wrapping-a-div-around-the-document-body
+	
 	// If it already exists, just return it (ie. double clicking the bookmarklet)
 	if(document.getElementById(id) !== null) { return document.getElementById(id); }
 	
