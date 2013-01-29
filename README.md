@@ -11,6 +11,7 @@ Create a new Bookmark with the following URL:
 Tested in Google Chrome and Safari 6.
 
 ## TODO
-* Remove jQuery dependence
-* Add support for other browsers
+* Add support for other browsers (Firefox)
+* Rotate in other directions
 * Load website-specific fixes from remote file (they're likely to change often, while the main bookmarklet is not), assuming no cross-domain issues.
+* Remove float if possible

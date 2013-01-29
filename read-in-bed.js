@@ -35,11 +35,18 @@ var height = wrap_rotate_inner.offsetHeight; 	/* $('#wrap_rotate_inner').height(
 inner_wrapper.style.float = '';
 
 // Rotate the inner wrapper
+inner_wrapper.style.position = 'relative';
+inner_wrapper.style.left = '-100%';
+
+// Firefox supportCSS3 Standsards support (Firefox)
+inner_wrapper.style.transform = 'rotateZ(-90deg)';
+inner_wrapper.style.transformOrigin = '100% 0%'; // Firefox seems to support 'transform-origin' but doesn't support 'transform-origin-x' or 'transform-origin-y'
+
+// Safari and Chrome support
 inner_wrapper.style.webkitTransform = 'rotateZ(-90deg)';
 inner_wrapper.style.webkitTransformOriginX = '100%';
 inner_wrapper.style.webkitTransformOriginY = '0%';
-inner_wrapper.style.position = 'relative';
-inner_wrapper.style.left = '-100%';
+
 
 // Set the width and height of the outer wrapper
 // (height of the outer div = width of the inner div)
